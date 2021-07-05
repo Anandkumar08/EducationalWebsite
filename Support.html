@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-translate-customization" content="9f841e7780177523-3214ceb76f765f38-gc38c6fe6f9d06436-c">
+    </meta>
+
+    <title>HackieTech</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+    <style>
+        .bg {
+            /* background-image: url("./images/back5.png"); */
+            background-color: rgb(245, 245, 245);
+            height: 100%;
+
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .context-dark,
+        .bg-gray-dark,
+        .bg-primary {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .footer-classic a,
+        .footer-classic a:focus,
+        .footer-classic a:active {
+            color: #ffffff;
+        }
+
+        .nav-list li a:hover:before {
+            margin-left: 0;
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        .nav-list li a:before {
+            content: "\f14f";
+            font: 400 21px/1 "Material Design Icons";
+            color: #4d6de6;
+            display: inline-block;
+            vertical-align: baseline;
+            margin-left: -28px;
+            margin-right: 7px;
+            opacity: 0;
+            visibility: hidden;
+            transition: .22s ease;
+        }
+
+        /* ********************************************************************************************************  */
+        .Headlines {
+            background-color: #192a56;
+        }
+
+        .HeaderLink {
+            font-family: 'Courgette', cursive;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+        }
+
+        .HeaderLink:before,
+        .HeaderLink:after {
+            content: "";
+            background: #eff76f;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transform: translateX(-50%);
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            z-index: -1;
+            transition: all 0.3s cubic-bezier(0.42, 0.08, 0, 1.8);
+        }
+
+        .HeaderLink:after {
+            content: attr(data-hover);
+            color: #192a56;
+            background: transparent;
+            font-size: 25px;
+            font-weight: 600;
+            text-align: center;
+            letter-spacing: 1px;
+            opacity: 1;
+            transform: translateX(-50%) scale(0);
+        }
+
+        .HeaderLink:hover:before {
+            width: 140%;
+            opacity: 1;
+            transform: translateX(-50%) skewx(-20deg);
+        }
+
+        .HeaderLink:hover:after {
+            transform: translateX(-50%) scale(1);
+        }
+
+        .HeaderLink span {
+            color: #fff;
+            font-size: 25px;
+            font-weight: 600;
+            text-align: center;
+            letter-spacing: 1px;
+            display: block;
+            transition: all 0.3s ease 0s;
+        }
+
+        .HeaderLink:hover span {
+            color: transparent;
+        }
+
+        @media only screen and (max-width: 990px) {
+            .HeaderLink {
+                font-size: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            .HeaderLink {
+                margin: 0 0 30px 40px;
+            }
+        }
+
+        /*  **************************************************************************************************************** */
+
+        .form-horizontal {
+            padding: 60px 40px 55px 40px;
+            margin-top: 40px;
+            background: #2e3137;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        .form-horizontal:before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            width: 100px;
+            height: 100px;
+            line-height: 96px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            background: #14a3aa;
+            font-size: 40px;
+            color: #fff;
+            text-align: center;
+            margin: 0 auto;
+            position: absolute;
+            top: -10px;
+            left: 0;
+            right: 0;
+        }
+
+        .form-horizontal .heading {
+            display: block;
+            font-size: 28px;
+            color: #597886;
+            text-transform: capitalize;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-horizontal .form-group {
+            margin: 0 0 30px 0;
+            position: relative;
+        }
+
+
+
+        .form-horizontal .form-control {
+            height: 50px;
+            border: 2px solid #cbe9ea;
+            border-radius: 5px;
+            box-shadow: none;
+            padding: 0 20px 0 26%;
+            font-size: 16px;
+            font-weight: bold;
+            color: #94abb6;
+            position: relative;
+            transition: all 0.3s ease 0s;
+        }
+
+
+
+        .form-horizontal .control-label {
+            width: 25%;
+            height: 46px;
+            line-height: 46px;
+            background: #f5ffff;
+            padding: 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: #94abb6;
+            text-transform: capitalize;
+            text-align: center;
+            border-right: 2px solid #cbe9ea;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            z-index: 1;
+        }
+
+        .form-horizontal .btn,
+        .form-horizontal .btn:focus {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            padding: 0 30px;
+            background: #14a3aa;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        .form-horizontal .btn:hover {
+            background: #14a3aa;
+        }
+
+        .form-horizontal .btn:before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            top: 0;
+            left: 30px;
+            font-size: 24px;
+            color: #fff;
+        }
+
+
+    </style>
+
+    <!--LINK CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <!--LINK JQUERY-->
+    <script type="text/javascript" src="./script/script.js"></script>
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" class="bg">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="./index.html" title="Home"><span class="glyphicon glyphicon-home"
+                                style="font-size: 16px;"></span></a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#contactus" title="Contact US"><span class="glyphicon glyphicon-comment"
+                                style="font-size: 16px;"></span></a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><span class="glyphicon glyphicon-chevron-down"
+                                    style="font-size: 16px;"></span></button>
+                            <div class="dropdown-content" style="left:0;">
+                                <a href="login.html" title="Login">Login</a>
+                                <a href="signUp.html" title="SignUp">SignUp</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- <li><a href="login.html" title="Login">Login</a></li>
+          <li class="active"><a href="signUp.html" title="SignUp">SignUp</a></li> -->
+                    <li><a href="#" title="Settings"><span class="glyphicon glyphicon-cog"
+                                style="font-size: 16px;"></span></a>
+                    </li>
+                    <li><a href="Support.html" title="Support">Submit your Templates</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="bgimage">
+        <img class="" src="./images/Banner/slider-bg5.jpg" style="width: 100%;height: 600px;">
+    </div>
+
+    <div class="bannerImg w3-allerta">
+        <!-- <span class="newfont" style="font-size: 30px;">| HackieTech | </span> -->
+        <p class="w3-xxxlarge newfont" style="font-size: 69px;">| HackieTech | </p>
+        <p>Don't fear the Technology</p>
+    </div>
+
+    <br><br>
+
+    <!-- **************************************************************************** -->
+    <!-- **************************************************************************** -->
+    <center>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <form class="form-horizontal">
+                        <span class="heading">Submit your Design Template</span>
+                        <div class="form-group">
+                            <label class="control-label" for="exampleInputName2">Name</label>
+                            <input required type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="exampleInputName2">Email</label>
+                            <input required type="email" class="form-control" id="exampleInputEmail1">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="exampleInputName2">Date Of Birth</label>
+                            <input required type="date" class="form-control" id="exampleInputEmail1">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="exampleInputName2">Upload</label>
+                            <input required type="file" class="form-control" id="exampleInputEmail1">
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <button type="reset" class="btn btn-default">Reset</button>
+                            </div>
+                            <div class="col-sm-6">
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </center>
+
+
+
+
+    <!-- **************************************************************************** -->
+    <br><br>
+    <footer class="container-fluid text-center" style="background-color: #3f3f3f; width: 100%">
+        <div style="text-align: center">
+            <!-- Adding  icons -->
+            <a href="https://www.facebook.com/anandhackie" class="fa fa-facebook icons" target="_blank"></a>
+            <a href="https://www.twitter.com/anand_hackie" class="fa fa-twitter icons" target="_blank"></a>
+            <a href="https://www.youtube.com/c/Anandhackie" class="fa fa-youtube icons" target="_blank"></a>
+            <a href="https://www.instagram.com/insta_hackie/" class="fa fa-instagram icons" target="_blank"></a>
+            <a href="https://soundcloud.com/anandhackie" class="fa fa-soundcloud icons" target="_blank"></a>
+        </div>
+        <br>
+        <p>© Copyright 2019. All Rights Reserved. Developed By <br><a href="https://facebook.com/anandhackie"
+                title="Visit Anand's FB">Anand Kumar</a></p>
+        <a href="#myPage" title="To Top" style="border: 2px solid #818181;">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <br>
+    </footer>
+
+</body>
+
+</html>

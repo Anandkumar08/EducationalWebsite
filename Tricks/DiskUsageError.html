@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="9f841e7780177523-3214ceb76f765f38-gc38c6fe6f9d06436-c">
+  </meta>
+
+  <title>HackieTech</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type="text/css">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+  <style>
+    .bg {
+      /* background-image: url("./images/back5.png"); */
+      background-color: rgb(245, 245, 245);
+      height: 100%;
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .context-dark,
+    .bg-gray-dark,
+    .bg-primary {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .footer-classic a,
+    .footer-classic a:focus,
+    .footer-classic a:active {
+      color: #ffffff;
+    }
+
+    .nav-list li a:hover:before {
+      margin-left: 0;
+      opacity: 1;
+      visibility: visible;
+    }
+
+
+    .nav-list li a:before {
+      content: "\f14f";
+      font: 400 21px/1 "Material Design Icons";
+      color: #4d6de6;
+      display: inline-block;
+      vertical-align: baseline;
+      margin-left: -28px;
+      margin-right: 7px;
+      opacity: 0;
+      visibility: hidden;
+      transition: .22s ease;
+    }
+
+    /* ************************************************************************************************************************** */
+    a:hover,
+    a:focus {
+      text-decoration: none;
+      outline: none;
+    }
+
+    #accordion1 .panel {
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      margin: 0 0 15px 50px;
+    }
+
+    #accordion1 .panel-heading {
+      padding: 0;
+      background: #fff;
+      border: none;
+      position: relative;
+    }
+
+    #accordion1 .panel-title a {
+      display: block;
+      padding: 10px 20px 10px 60px;
+      background: #273e47;
+      border-radius: 30px;
+      border: 2px solid #273e47;
+      font-size: 20px;
+      font-weight: 600;
+      color: #fff;
+      position: relative;
+    }
+
+    #accordion1 .panel-title a.collapsed {
+      border: 2px solid #bbb;
+      background: #fff;
+      color: #bbb;
+    }
+
+    #accordion1 .panel-title a:before,
+    #accordion1 .panel-title a.collapsed:before {
+      content: "\f068";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      border-radius: 50%;
+      background: #273e47;
+      font-size: 18px;
+      color: #fff;
+      text-align: center;
+      border-right: 3px solid #fff;
+      position: absolute;
+      top: -10px;
+      left: -30px;
+      z-index: 1;
+      transition: all 0.3s ease 0s;
+    }
+
+    #accordion1 .panel-title a.collapsed:before {
+      content: "\f067";
+      background: #bbb;
+      border: none;
+    }
+
+    #accordion1 .panel-body {
+      padding: 15px 20px 0;
+      margin: 0 0 0 30px;
+      border: none;
+      font-size: 14px;
+      color: #333;
+      line-height: 28px;
+      position: relative;
+    }
+
+    #accordion1 .panel-body:before {
+      content: "";
+      display: block;
+      width: 5px;
+      height: 90%;
+      background: #273e47;
+      position: absolute;
+      top: 0;
+      left: -30px;
+    }
+
+    #accordion1 .panel-body:after {
+      content: "";
+      border-top: 20px solid #273e47;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      position: absolute;
+      bottom: 0;
+      left: -48px;
+    }
+  </style>
+  <!--LINK CSS-->
+  <link rel="stylesheet" type="text/css" href="./../css/style.css" />
+  <!--LINK JQUERY-->
+  <script type="text/javascript" src="./../script/script.js"></script>
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" class="bg">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="./../index.html" title="Home"><span class="glyphicon glyphicon-home"
+                style="font-size: 16px;"></span></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <!-- <li><a href="#Technology" title="Technology">Technology</a></li> -->
+          <!-- <li><a href="#Books" title="Books">Books</a></li> -->
+          <li><a href="#contactus" title="Contact US"><span class="glyphicon glyphicon-comment"
+                style="font-size: 16px;"></span></a></li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn"><span class="glyphicon glyphicon-chevron-down"
+                  style="font-size: 16px;"></span></button>
+              <div class="dropdown-content" style="left:0;">
+                <a href="./../login.html" title="Login">Login</a>
+                <a href="./../signUp.html" title="SignUp">SignUp</a>
+              </div>
+            </div>
+          </li>
+          <!-- <li><a href="login.html" title="Login">Login</a></li>
+          <li class="active"><a href="signUp.html" title="SignUp">SignUp</a></li> -->
+          <li><a href="#" title="Settings"><span class="glyphicon glyphicon-cog" style="font-size: 16px;"></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="bgimage">
+    <img class="" src="./../images/Banner/slider-bg5.jpg" style="width: 100%;height: 550px;">
+  </div>
+
+  <div class="bannerImg w3-allerta">
+    <!-- <span class="newfont" style="font-size: 30px;">| HackieTech | </span> -->
+    <p class="w3-xxxlarge newfont" style="font-size: 69px;">| HackieTech | </p>
+    <!-- <p>Don't fear the Technology</p> -->
+  </div>
+
+
+  <!-- <div class="jumbotron text-center">
+    <h1 class="newfont">| HackieTech | </h1>
+  </div> -->
+  <br><br>
+  <!-- -----------------------------------------------------------------------------------Container ()----------------------------------------------------------------------------------- -->
+  <div id="Technology" class="container-fluid text-center">
+    <h2>How to Solve 100% Disk Usage Error in Windows 10</h2>
+
+    <div class="row slideanim" style="text-align: left">
+      <div class="col-md-6">
+        If your Windows 10 Task Manager shows 100% disk usage, something is causing your hard drive to over-work. <br>
+        Your computer is now so slow it’s almost impossible to use, and you’re probably wondering what you did wrong.
+        In other words You have a lagging Windows 10 PC which is refusing to work as intended.<br>
+        The answer is, nothing! This problem can occur all by itself.
+        <br>
+        Here are a few fixes that have helped other users resolve their Windows 10 100% disk usage problem and will help
+        you speed up your PC and make it usable again.<br>
+        You may not need to try them all; just work your way down the list until you find the one that works for
+        you.<br><br><br><br>
+        Here are some easy steps to resolve the 100% disk usage error.
+      </div>
+      <div class="col-md-6">
+        <img src="./../images/100-percent-disk-use-1.jpg" style="max-width:100%">
+      </div>
+    </div>
+    <br>
+    <div class="row slideanim" style="text-align: left">
+      <div class="col-sm-12">
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+        <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+          <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+          <div class="panel panel-default">
+            <div class="panel-heading1" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                    1. Turn Off Windows Search
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                To determine if Windows Search is causing your 100% disk usage problem, the first thing you should do
+                is
+                temporarily disable Windows Search,
+                and see if your computer speeds up. If it does, you can permanently disable Windows Search.
+                <strong>Temporarily disable Windows Search</strong>
+                Windows Search is what makes searching files on your PC much faster.
+                If you don’t use it at all, or you have another search app, you can disable it completely. Disabling
+                this
+                service will stop the indexing of all files.
+                But you will still have access to search, which will take longer time.
+                Here’s how to temporarily disable Windows Search and find out if it’s the cause of your 100% disk
+                utilization
+                problem.
+                (Note that Windows Search will start again when you restart your computer.)
+                <br><br>
+                <strong> i)</strong> On your keyboard, press the <kbd>Windows Key</kbd> + <kbd>X</kbd> at the same
+                time,
+                then select Command Prompt (Admin).
+                <br><br>
+                <img src="./../images/win+x.png" style="max-width:100%">
+                <br><br>
+                <strong> ii)</strong> Click <strong> Yes</strong> at the User Account Control window prompt.
+                <br><br>
+                <img src="./../images/clickyes.jpg" style="max-width:100%">
+                <br><br>
+                iii) A mostly black window will then display. This is the command prompt window. In this window, type
+                in the
+                following command:
+                <pre class="wp-block-preformatted">net.exe stop "Windows search"</pre>
+                iv) Hit Enter on your keyboard.
+                <br> <br>
+                <img src="./../images/winsearch.png" style="max-width:100%">
+                <br>
+                Check to see if your disk usage and the performance of your computer improve.
+                If they do, you should permanently disable Windows Search as described below.
+                <br>If not, move on to below Steps. <br><br><br>
+                <strong> Permanently disable Windows Search</strong>
+                If you discovered that Windows Search is causing your 100% disk usage error in Windows 10, you can
+                permanently
+                disable Windows Search:
+                <br>
+                i) Press <strong>Windows logo key</strong> + R at the same time, and type in
+                <strong><u>services.msc</u></strong>
+                <br><br>
+                <img src="./../images/runcommand.png" style="max-width:100%">
+                <br><br>
+                ii) Locate <strong>>Windows Search</strong> option, double click it to enter its
+                <strong>Properties</strong>
+                window.
+                <br><br>
+                <img src="./../images/servicesimg.jpg" style="max-width:100%">
+                <br><br>
+                iii) Change the <strong> Startup type</strong> to <strong>Disabled</strong>. Then click
+                <strong>Apply</strong>
+                and <strong>OK</strong> to save your change.
+                <br><br>
+                <img src="./../images/winprop.png" style="max-width:100%">
+                <br><br>
+                iv) Check your computer’s disk usage: Type “task manager” in the Windows search bar and select
+                <strong>Task
+                  Manager</strong>,
+                then in the Processes tab, look at the % at the top of the Disk column. If it’s no longer 100%, you’ve
+                fixed
+                the problem!
+                <br><br>
+                <img src="./../images/100-disk-usage-resolved.png" style="max-width:100%">
+                <br><br>
+                If the 100% disk usage problem persists, try the next method, below.
+              </div>
+            </div>
+          </div>
+          <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+          <div class="panel panel-default">
+            <div class="panel-heading1" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                  2. Disable SuperFetch
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                SuperFetch helps to decrease boot time and make must-load programs more efficiently.
+                However, it has been identified as a potential cause of disk performance issues in Windows 8 and later
+                versions of Windows, including Windows 10.
+                Sometimes, the Superfetch service in Windows has been determined as the potential reason for this 100%
+                disk
+                usage issue in Windows 10.
+                <br><br>
+                Here’s how to stop this service:<br>
+                <br>
+                <strong> i)</strong> On your keyboard, press the <kbd>Windows Key</kbd> + <kbd>X</kbd> at the same time,
+                then select Command Prompt (Admin).
+                <br><br>
+                <img src="./../images/win+x.png" style="max-width:100%">
+                <br><br>
+                <strong> ii)</strong> Click <strong> Yes</strong> at the User Account Control window prompt.
+                <br><br>
+                <img src="./../images/clickyes.jpg" style="max-width:100%">
+                <br><br>
+                iii) The command prompt will once again display. Type in the following command:
+                <pre class="wp-block-preformatted">net.exe stop superfetch</pre>
+                iv) Hit Enter on your keyboard.
+                <br><br>
+                <img src="./../images/disable-superfetch-service.jpg" style="max-width:100%">
+                <br><br>
+                v) Wait for a few minutes to see if your computer starts performing better.
+                Or check your computer’s disk usage: Type “task manager” in the Windows search bar and select Task
+                Manager,
+                then in the Processes tab, look at the % at the top of the Disk column.
+                If it’s no longer 100%, you’ve fixed the problem!
+                <br><br>
+                <img src="./../images/100-disk-usage-resolved.png" style="max-width:100%">
+                <br><br>
+                If the 100% disk usage problem persists, try the next method, below.
+              </div>
+            </div>
+          </div>
+          <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+          <div class="panel panel-default">
+            <div class="panel-heading1" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1"
+                  href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  3. Perform a disk check
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                Chkdsk is a basic Windows utility that scans a hard disk, usb / external drive for errors and can fix
+                filesystem errors for free without using any external tools.
+                <br>
+                <strong> i)</strong> On your keyboard, press the <kbd>Windows Key</kbd> + <kbd>X</kbd> at the same time,
+                then select Command Prompt (Admin).
+                <br><br>
+                <img src="./../images/win+x.png" style="max-width:100%">
+                <br><br>
+                <strong> ii)</strong> Click <strong> Yes</strong> at the User Account Control window prompt.
+                <br><br>
+                <img src="./../images/clickyes.jpg" style="max-width:100%">
+                <br><br>
+                iii) The command prompt will once again display. Type in the following command:
+                <pre class="wp-block-preformatted">chkdsk.exe /f /r</pre>
+                iv) Hit Enter on your keyboard, then type Y to confirm that you’d like to perform the disk check the
+                next time
+                you restart your computer.
+                Please make sure you have closed all of your applications first.
+                <br><br>
+                <img src="./../images/chkdsk.png" style="max-width:100%">
+                <br><br>
+                <strong>IMPORTANT:</strong> Disk check will start the next time you boot your PC and it might take some
+                time
+                to complete (could be a day for some).
+                If, when you restart, you don’t have time to wait for the disk check to complete, you can skip it.
+                You’ll need
+                to reschedule it again, as described above, though.<br>
+                v) Once you’ve completed the disk check, check your computer’s disk usage again: Type “task manager” in
+                the
+                Windows search bar and select Task Manager,
+                then in the Processes tab, look at the % at the top of the Disk column. If it’s no longer 100%, you’ve
+                fixed
+                the problem!
+                <br><br>
+                <img src="./../images/100-disk-usage-resolved.png" style="max-width:100%">
+                <br><br>
+                If the 100% disk usage problem persists, try the next method, below.
+              </div>
+            </div>
+          </div>
+          <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+          <div class="panel panel-default">
+            <div class="panel-heading1" role="tab" id="headingFour">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour"
+                  aria-expanded="false" aria-controls="collapseFour">
+                  4. Reset Virtual Memory
+                </a>
+              </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+              <div class="panel-body">
+                Virtual memory can be considered an extension of your computer’s physical memory. It’s a combination of
+                RAM and a portion of your hard drive.
+                When the RAM isn’t enough to perform a task, Windows will temporarily store files in virtual memory,
+                then swap them back to RAM when required.
+                <br>
+                <br>
+                <p>To reset virtual memory:<br>
+                  <strong><br>
+                  </strong>i) On your keyboard, press <kbd>Windows Key</kbd> + <kbd>Pause/ Break</kbd> key at
+                  the same time.
+                  Then choose&nbsp;<strong>Advanced System Settings</strong> on the left panel.</p>
+                <br><br>
+                <img src="./../images/advanceproperties.jpg" style="max-width:100%">
+                <br><br>
+                <p>ii)&nbsp;<span>Go to the <strong>Advanced</strong> tab, then
+                    click<strong>&nbsp;Settings</strong>.&nbsp;</span></p>
+                <br><br>
+                <img src="./../images/systemproperties.png" style="max-width:100%">
+                <br><br>
+                <p><span>iii) Go to the<strong>&nbsp;Advanced </strong>tab again, and choose<strong>
+                      Change…&nbsp;</strong>in
+                    the Virtual memory section.&nbsp;</span></p>
+                <br><br>
+                <img src="./../images/systemproprties 2.png" style="max-width:100%">
+                <br><br>
+                <p><span>iv) Ensure the&nbsp;<strong>Automatically manage paging file size for all drives</strong>
+                    checkbox
+                    is<strong> NOT</strong> ticked.<strong>&nbsp;</strong></span></p>
+                <br><br>
+                <img src="./../images/virtualmemory.png" style="max-width:100%">
+                <br><br>
+                v) Select your windows drive (the hard drive or partition that has Windows installed on it – usually
+                C:),
+                and
+                enter an Initial size and Maximum size for your virtual memory:
+                <br>
+                <ul>
+                  <li><span><strong>Initial size</strong> – This value varies, depending on your computer.
+                      If you’re not sure what value to use,
+                      just enter whatever the number is in the <strong>Recommended</strong> category.
+                      &nbsp;</span></li>
+                  <li><span><strong>Maximum size</strong> – Don’t set this value too high.
+                      It should be about 1.5 times the size of your physical RAM. e.g.
+                      A&nbsp;PC with 4 GB (4096 MB) of RAM should have no more than about 6,144 MB virtual memory
+                      (4096&nbsp;MB x 1.5).</span></li>
+                </ul><br>
+                <p><span>Once you’ve entered your virtual memory values,&nbsp;click&nbsp;<strong>Set</strong>, then
+                    click&nbsp;<strong>OK </strong>to continue.<strong>&nbsp;</strong></span></p>
+                <br><br>
+                <img src="./../images/virtualmemory2nd.png" style="max-width:100%">
+                <br><br>
+                <p><span>vi) Clear all your computer’s ‘temp’ files.&nbsp;On your keyboard, press<strong> Windows key
+                    </strong>and<strong> R </strong>at the same time, then in the Run form,
+                    type <strong>temp </strong>and hit<strong> Enter</strong>.
+                    This will invoke Windows Explorer with your Temp folder open, showing you all the temp files on your
+                    computer.&nbsp;</span></p>
+                <br><br>
+                <img src="./../images/runcmd.png" style="max-width:100%">
+                <br><br>
+                vii) Select all the files in the Temp folder and delete them. <br>
+                <br><br>
+                <img src="./../images/tempdelete.JPG" style="max-width:100%">
+                <br><br>
+                <p>viii)&nbsp;Check your computer’s disk usage:&nbsp;Type “task manager” in the Windows search bar and
+                  select
+                  <strong>Task Manager</strong>,
+                  then in the Processes tab, look at the % at the top of the Disk column. If it’s no longer 100%, you’ve
+                  fixed
+                  the problem!</p>
+                <br><br>
+                <img src="./../images/100-disk-usage-resolved.png" style="max-width:100%">
+                <br><br>
+                If the 100% disk usage problem persists, try the next method, below.
+              </div>
+            </div>
+          </div>
+          <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+          <div class="panel panel-default">
+            <div class="panel-heading1" role="tab" id="headingFive">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseFive"
+                  aria-expanded="false" aria-controls="collapseFive">
+                  5. Disable Antivirus Software temporarily
+                </a>
+              </h4>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+              <div class="panel-body">
+                <p>If you’ve installed antivirus or anti-malware programs such as Norton, Kaspersky,
+                  AVG, Avast Behavior Shield or Malwarebytes, you should <strong>temporarily turn them off or disable
+                    them</strong> to see if they’re causing your disk usage problem.&nbsp;</p>
+                <br>
+                <p><strong></strong>Note that Microsoft has its own default anti-malware, <strong>Windows
+                    Defender</strong>.
+                  It’s automatically enabled even if you also have other antivirus applications installed.
+                  Even if you disable your other antivirus programs, Windows Defender is always there for you during
+                  that
+                  certain time range.
+                  So, no need to worry too much about temporarily turning antivirus off.&nbsp;</p><br>
+                <p><strong>Once you’ve disabled your antivirus</strong>,
+                  check your computer’s disk usage again:&nbsp;Type “task manager” in the Windows search bar
+                  and select <strong>Task Manager</strong>, then in the Processes tab, look at the % at the top of the
+                  Disk
+                  column.
+                  If it’s no longer 100%, you’ve found the problem, and you should contact the vendor of your antivirus
+                  software to see if they can provide some help.</p>
+                <br><br>
+                <img src="./../images/100-disk-usage-resolved.png" style="max-width:100%">
+                <br><br>
+                If the 100% disk usage problem persists, try the next method, below.
+              </div>
+            </div>
+          </div>
+
+          <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+          <div class="panel panel-default">
+            <div class="panel-heading1" role="tab" id="headingSix">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseSix"
+                  aria-expanded="false" aria-controls="collapseSix">
+                  6. Change your Google Chrome & Skype settings
+                </a>
+              </h4>
+            </div>
+            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+              <div class="panel-body">
+                <p>For some Windows 10 users, a particular combination of Skype and Google Chrome browser settings
+                  causes the
+                  100% disk usage problem in Windows 10.
+                  Here’s how to fix those settings (note that the wording on different versions of Chrome could be
+                  slightly
+                  different):&nbsp;</p><br>
+                <p>i) In Google Chrome, click the <kbd>three-dot icon</kbd> at the top right corner and choose
+                  <strong>Settings</strong>.&nbsp;</p>
+                <br><br>
+                <img src="./../images/chrome.png" style="max-width:100%">
+                <br><br>
+                <p>ii) Scroll down to the bottom of the page and click&nbsp;<strong>Advanced</strong>.&nbsp;
+                </p><br>
+                <br><br>
+                <img src="./../images/chromeadv.png" style="max-width:100%">
+                <br><br>
+                <p>iii) In the&nbsp;<strong>Privacy and Security</strong> category, make sure <b>&nbsp;Use a prediction
+                    service to load pages more quickly&nbsp;</b>is turned off.&nbsp;</p><br>
+                <br><br>
+                <img src="./../images/chromeprivacysetting.jpg" style="max-width:100%">
+                <br><br>
+                <p>iv) Make sure that your Skype is not running.&nbsp;</p><br>
+                <p>v) In Windows Explorer, go to&nbsp;<strong>C:\Program Files (x86)\Skype\Phone\</strong>.&nbsp;</p>
+                <br><br>
+                <img src="./../images/skype.png" style="max-width:100%">
+                <br><br>
+                <p>vi) Right-click <strong>Skype.exe</strong> and select&nbsp;<strong>Properties</strong>.&nbsp;</p><br>
+                <br><br>
+                <img src="./../images/skypeeapp.png" style="max-width:100%">
+                <br><br>
+                <p>vii)&nbsp;Go to the&nbsp;<strong>Security</strong> tab and select&nbsp;<strong>Edit</strong>.&nbsp;
+                </p><br>
+                <br><br>
+                <img src="./../images/skypeeproperties.png" style="max-width:100%">
+                <br><br>
+                <p>8) Click&nbsp;<strong>ALL APPLICATION PACKAGES</strong> and tick the
+                  <strong>Allow</strong>&nbsp;checkbox
+                  for<strong>&nbsp;Write</strong>.
+                  Then click <strong>Apply</strong>,&nbsp;then <strong>OK</strong> to save your change.&nbsp;</p><br>
+                <br><br>
+                <img src="./../images/skypeeapplicationprop.png" style="max-width:100%">
+                <br><br>
+                <p>9) Check your computer’s disk usage:&nbsp;Type “task manager” in the Windows search bar and select
+                  <strong>Task Manager</strong>,
+                  then in the Processes tab, look at the % at the top of the Disk column.
+                  If it’s no longer 100%, you’ve fixed the problem!</p><br>
+                <br><br>
+                <img src="./../images/100-disk-usage-resolved.png" style="max-width:100%">
+                <br><br>
+                If the 100% disk usage problem persists, try the next method, below.
+              </div>
+            </div>
+          </div>
+          <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+          <div class="panel panel-default">
+            <div class="panel-heading1" role="tab" id="headingSeven">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseSeven"
+                  aria-expanded="false" aria-controls="collapseSeven">
+                  7. Fix your StorAHCI.sys driver
+                </a>
+              </h4>
+            </div>
+            <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+              <div class="panel-body">
+                <p>The Windows 10 100% disk usage problem might also be
+                  caused by some Advanced Host Controller Interface PCI-Express (AHCI PCIe) models running with the
+                  inbox
+                  <strong> StorAHCI.sys</strong> driver due to a firmware bug.&nbsp;</p><br>
+                Here’s how to determine if this is your problem and fix it:<br>
+                <p>i) Open&nbsp; <kbd>Device Manager </kbd>by pressing <kbd>Windows logo key</kbd> +
+                  <kbd>X</kbd>
+                  at the same time to choose<strong> Device Manager</strong>.&nbsp;</p>
+                <br><br>
+                <img src="./../images/devicemanager.png" style="max-width:100%">
+                <br><br>
+                <p>ii) Expand the&nbsp;<strong>IDE ATA/ATAPI Controllers&nbsp;</strong>category, and double-click the
+                  <strong>AHCI controller</strong>.&nbsp;</p>
+                <br><br>
+                <img src="./../images/IDE.png" style="max-width:100%">
+                <br><br>
+                <p>iii) Go to the&nbsp;<strong>Driver</strong> tab and click<strong> Driver Details</strong>.
+                  If you can see <strong>storahci.sys</strong> stored in a path of system32 folder, then you are running
+                  the
+                  inbox AHCI driver.&nbsp;</p>
+                <br><br>
+                <img src="./../images/drivefileprop.png" style="max-width:100%">
+                <br><br>
+                <p>iv) Close the Driver Details window and go to <strong>Details</strong> tab.
+                  From the drop-down menu, select&nbsp;<strong>Device Instance Path</strong>. Make note of the path,
+                  starting
+                  from <strong>VEN_</strong>.&nbsp;</p>
+                <br><br>
+                <img src="./../images/standardsata.png" style="max-width:100%">
+                <br><br>
+                <p>v) Type <strong>regedit</strong> in the search box of <strong>Start</strong> panel, then hit
+                  <strong>Enter</strong>&nbsp;on your keyboard to run Registry Editor.
+                  Then go to:&nbsp;</p><br>
+                <p>
+                  <strong>
+                    <span class="crayon-v">HKEY_LOCAL_MACHINE</span><span class="crayon-sy">\</span>
+                    <span class="crayon-v">System</span><span class="crayon-sy">\</span>
+                    <span class="crayon-v">CurrentControlSet</span>
+                    <span class="crayon-sy">\</span><span class="crayon-t">Enum</span>
+                    <span class="crayon-sy">\</span>
+                    <span class="crayon-v">PCI</span><span class="crayon-sy">\</span>
+                    <span class="crayon-h"> </span>
+                    <span style="color: #ff0000;">
+                      <span class="crayon-o">&lt;</span><span class="crayon-e">AHCI </span>
+                      <span class="crayon-v">Controller</span><span class="crayon-o">&gt;</span>
+                      <span class="crayon-sy">\</span>
+                      <span class="crayon-o">&lt;</span>
+                      <span class="crayon-e">Random </span>
+                      <span class="crayon-v">Number</span>
+                      <span class="crayon-o">&gt;</span>
+                    </span>
+                    <span class="crayon-sy">\</span>
+                    <span class="crayon-e">Device </span>
+                    <span class="crayon-v">Parameters</span>
+                    <span class="crayon-sy">\</span>
+                    <span class="crayon-e">Interrupt
+                    </span><span class="crayon-v">Management</span><span class="crayon-sy">\</span>
+                  </strong>
+                  <span class="crayon-v">
+                    <strong>MessageSignaledInterruptProperties </strong>
+                    <br>
+                  </span>
+                </p><br>
+                <p>The&nbsp;
+                  <strong>
+                    <span class="crayon-o">&lt;</span>
+                    <span class="crayon-e">AHCI </span>
+                    <span class="crayon-v">Controller</span>
+                    <span class="crayon-o">&gt;&nbsp;</span>
+                  </strong><span class="crayon-o">here refers to the name you see from step ii).&nbsp;</span>
+                </p>
+                <p>The&nbsp;
+                  <strong>
+                    <span>
+                      <span class="crayon-o">&lt;</span>
+                      <span class="crayon-e">Random </span>
+                      <span class="crayon-v">Number</span>
+                      <span class="crayon-o">&gt;&nbsp;</span>
+                    </span>
+                  </strong>
+                  <span>
+                    <span class="crayon-o">differs on different machines.&nbsp;</span>
+                  </span>
+                </p>
+                <br><br>
+                <img src="./../images/registryEditor.jpg" style="max-width:100%">
+                <br><br>
+                <p>vi) Double click the <strong>MSISupported</strong> key and change the value to<strong>
+                    0</strong>.&nbsp;
+                </p>
+                <br><br>
+                <img src="./../images/MSIRegedit.jpg" style="max-width:100%">
+                <br><br>
+                <p>vii) Restart your computer after the change, then check your computer’s disk usage:&nbsp;Type “task
+                  manager”
+                  in the Windows search bar and select
+                  <strong>Task Manager</strong>,
+                  then in the Processes tab, look at the % at the top of the Disk column. If it’s no longer 100%, you’ve
+                  fixed
+                  the problem!</p><br>
+                <br><br>
+                <img src="./../images/100-disk-usage-resolved.png" style="max-width:100%">
+                <br><br>
+                If the 100% disk usage problem persists, try the next method, below.
+              </div>
+            </div>
+          </div>
+          <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+        </div>
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+      </div>
+    </div>
+    <br><br><br><br>
+    <br>
+    <!-- **************************************************************************** -->
+    <footer class="container-fluid text-center" style="background-color: #3f3f3f; width: 100%">
+      <div style="text-align: center">
+        <!-- Adding  icons -->
+        <a href="https://www.facebook.com/anandhackie" class="fa fa-facebook icons" target="_blank"></a>
+        <a href="https://www.twitter.com/anand_hackie" class="fa fa-twitter icons" target="_blank"></a>
+        <a href="https://www.youtube.com/c/Anandhackie" class="fa fa-youtube icons" target="_blank"></a>
+        <a href="https://www.instagram.com/insta_hackie/" class="fa fa-instagram icons" target="_blank"></a>
+        <a href="https://soundcloud.com/anandhackie" class="fa fa-soundcloud icons" target="_blank"></a>
+      </div>
+      <br>
+      <p>© Copyright 2019. All Rights Reserved. Developed By <br><a href="https://facebook.com/anandhackie"
+          title="Visit Anand's FB">Anand Kumar</a></p>
+      <a href="#myPage" title="To Top" style="border: 2px solid #818181;">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <br>
+    </footer>
+</body>
+
+</html>

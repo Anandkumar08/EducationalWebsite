@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="9f841e7780177523-3214ceb76f765f38-gc38c6fe6f9d06436-c">
+  </meta>
+
+  <title>HackieTech</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+  <style>
+    .bg {
+      /* background-image: url("./images/back5.png"); */
+      background-color: rgb(245, 245, 245);
+      height: 100%;
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .context-dark,
+    .bg-gray-dark,
+    .bg-primary {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .footer-classic a,
+    .footer-classic a:focus,
+    .footer-classic a:active {
+      color: #ffffff;
+    }
+
+    .nav-list li a:hover:before {
+      margin-left: 0;
+      opacity: 1;
+      visibility: visible;
+    }
+
+
+    .nav-list li a:before {
+      content: "\f14f";
+      font: 400 21px/1 "Material Design Icons";
+      color: #4d6de6;
+      display: inline-block;
+      vertical-align: baseline;
+      margin-left: -28px;
+      margin-right: 7px;
+      opacity: 0;
+      visibility: hidden;
+      transition: .22s ease;
+    }
+  </style>
+  <!--LINK CSS-->
+  <link rel="stylesheet" type="text/css" href="./../css/style.css" />
+  <!--LINK JQUERY-->
+  <script type="text/javascript" src="./../script/script.js"></script>
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" class="bg">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="./../index.html" title="Home"><span class="glyphicon glyphicon-home"
+                style="font-size: 16px;"></span></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <!-- <li><a href="#Technology" title="Technology">Technology</a></li> -->
+          <!-- <li><a href="#Books" title="Books">Books</a></li> -->
+          <li><a href="#contactus" title="Contact US"><span class="glyphicon glyphicon-comment"
+                style="font-size: 16px;"></span></a></li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn"><span class="glyphicon glyphicon-chevron-down"
+                  style="font-size: 16px;"></span></button>
+              <div class="dropdown-content" style="left:0;">
+                <a href="./../login.html" title="Login">Login</a>
+                <a href="./../signUp.html" title="SignUp">SignUp</a>
+              </div>
+            </div>
+          </li>
+          <!-- <li><a href="login.html" title="Login">Login</a></li>
+          <li class="active"><a href="signUp.html" title="SignUp">SignUp</a></li> -->
+          <li><a href="#" title="Settings"><span class="glyphicon glyphicon-cog" style="font-size: 16px;"></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="bgimage">
+    <img class="" src="./images/Banner/slider-bg5.jpg" style="width: 100%;height: 550px;">
+  </div>
+
+  <div class="bannerImg w3-allerta">
+    <!-- <span class="newfont" style="font-size: 30px;">| HackieTech | </span> -->
+    <p class="w3-xxxlarge newfont" style="font-size: 69px;">| HackieTech | </p>
+    <p>Don't fear the Technology</p>
+  </div>
+
+
+  <!-- <div class="jumbotron text-center">
+    <h1 class="newfont">| HackieTech | </h1>
+  </div> -->
+  <br><br>
+  <!-- -----------------------------------------------------------------------------------Container ()----------------------------------------------------------------------------------- -->
+  <div id="Technology" class="container-fluid text-center">
+    <h2>Linux Tips & Tricks</h2>
+
+    <div class="row slideanim" style="text-align: left">
+      <div class="col-md-6">
+        Here are some tiny but useful Linux commands, terminal tricks and shortcuts that will save you a lot of time
+        while working with Linux command line.<br>
+        It’s not that these are Linux tips for beginners only.
+        Chances are that even experienced Linux users will find some hidden gems that they were not aware despite using
+        Linux for all these years.<br>
+      </div>
+      <div class="col-md-6">
+        <!-- <img src="./../images/100-percent-disk-use-1.jpg" style="max-width:100%"> -->
+      </div>
+    </div>
+
+
+    <div class="row slideanim" style="text-align: left">
+      <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+      <div class="col-sm-12">
+
+        <div>
+          <strong style="color: darkcyan">
+            <h3>1. Using tab for autocompletion</h3>
+          </strong><br>
+          <p>I’ll start with something really obvious and yet really important: tab completion.</p>
+          <p>When you are starting to type something in Linux terminal, you can hit the tab key and it will suggest all
+            the possible options that start with string you have typed so far.</p>
+          <p>For example, if you are trying to copy a file named my_best_file_1.txt, you can just type ‘cp m’ and hit
+            tab to see the possible options.</p>
+          <br>
+          <img src="./../images/Linux-Command-tricks-to-save-time-8.png" style="max-width:100%">
+          <figcaption id="caption-attachment-17842" class="wp-caption-text">Use tab for auto-completion</figcaption>
+          <br>
+          <p>You can use tab in completing commands as well.</p>
+        </div>
+
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+        <div>
+          <strong style="color: darkcyan">
+            <h3>2. Switch back to the last working directory</h3>
+          </strong><br>
+          <p>Suppose you end up in a long directory path and then you move to another directory in a totally different
+            path.
+            And then you realize that you have to go back to the previous directory you were in. In this case, all you
+            need to do is to type this command:</p>
+          <pre><code>cd -</code></pre>
+          <p>This will put you back in the last working directory. You don’t need to type the long directory path or
+            copy paste it anymore.</p>
+          <br>
+          <img src="./../images/Linux-Command-tricks-to-save-time-1.png" style="max-width:100%">
+          <figcaption id="caption-attachment-17829" class="wp-caption-text">Easily switch between directories
+          </figcaption>
+          </figure>
+        </div>
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+        <div>
+          <strong style="color: darkcyan">
+            <h3>3. Go back to home directory</h3>
+          </strong><br>
+          <p>This is way too obvious. You can use the command below to move to your home directory from anywhere in
+            Linux command-line:</p>
+          <pre><code>cd ~</code></pre>
+          <p>However, you can also use just cd to go back to home directory:</p>
+          <pre><code>cd</code></pre>
+          <p>Most modern Linux distributions have the shell pre-configured for this command. Saves you at least two
+            keystrokes here.</p>
+          <br>
+          <img src="./../images/Linux-Command-tricks-to-save-time-2.png" style="max-width:100%">
+          <figcaption id="caption-attachment-17828" class="wp-caption-text">Move to Home as quickly as possible
+          </figcaption>
+        </div>
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+        <div>
+          <strong style="color: darkcyan">
+            <h3>4. List the contents of a directory</h3>
+          </strong><br>
+          <p>You must be guessing what’s the trick in the command for listing the contents of a directory. Everyone
+            knows to use the ls -l for this purpose.</p>
+          <p>And that’s the thing. Most people use ls -l to list the contents of the directory, whereas the same can be
+            done with the following command:</p>
+          <pre><code>ll</code></pre>
+          <p>Again, this depends on the Linux distributions and shell configuration, but chances are that you’ll be able
+            to use it in most Linux distributions.</p>
+          <img src="./../images/Linux-Command-tricks-to-save-time-3.png" style="max-width:100%">
+          <figcaption id="caption-attachment-17827" class="wp-caption-text">Using ll instead of ls -l</figcaption>
+        </div>
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+        <div>
+          <strong style="color: darkcyan">
+            <h3>5. Running multiple commands in one single command</h3>
+          </strong><br>
+          <p>Suppose, you have to run several commands one after another. Do you wait for the first command to finish
+            running and then execute the next one?</p>
+          <p>You can use the ‘;’ separator for this purpose. This way, you can run a number of commands in one line. No
+            need to wait for the previous commands to finish their business.</p>
+          <pre><code>command_1; command_2; command_3</code></pre>
+        </div>
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+        <div>
+          <strong style="color: darkcyan">
+            <h3>6. Running multiple commands in one single command only if the previous command was successful</h3>
+          </strong><br>
+          <p>In the previous command, you saw how to run several commands in one single command to save time. But what
+            if you have to make sure that commands don’t fail?</p>
+          <p>Imagine a situation where you want to build a code and then if the build was successful, run the make?</p>
+          <p>You can use &amp;&amp; separator for this case. &amp;&amp; makes sure that the next command will only run
+            when the previous command was successful.</p>
+          <pre><code>command_1 &amp;&amp; command_2</code></pre>
+          <p>A good example of this command is when you use sudo apt update &amp;&amp; sudo apt upgrade to upgrade your
+            system.</p>
+        </div>
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+        <div>
+          <strong style="color: darkcyan">
+            <h3>7. Easily search and use the commands that you had used in the past</h3>
+          </strong><br>
+          <p>Imagine a situation where you used a long command couple of minutes/hours ago and you have to use it again.
+            Problem is that you cannot remember the exact command anymore.</p>
+          <p>Reverse search is your savior here. You can search for the command in the history using a search term.</p>
+          <p>Just use the keys ctrl+r to initiate reverse search and type some part of the command. It will look up into
+            the history and will show you the commands that matches the search term.</p>
+          <pre><code>ctrl+r search_term</code></pre>
+          <p>By default, it will show just one result. To see more results matching your search term, you will have to
+            use ctrl+r again and again.&nbsp;
+            To quit reverse search, just use Ctrl+C.</p>
+          <img src="./../images/Linux-Command-tricks-to-save-time-4.png" style="max-width:100%">
+          <figcaption id="caption-attachment-17826" class="wp-caption-text">Reverse search in command history
+          </figcaption>
+          <p>Note that in some Bash shells, you can also use Page Up and Down key with your search term and it will
+            autocomplete the command.</p>
+        </div>
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+        <div>
+          <strong style="color: darkcyan">
+            <h3>8. Unfreeze your Linux terminal from accidental Ctrl+S</h3>
+          </strong><br>
+          <p>You probably are habitual of using Ctrl+S for saving. But if you use that in Linux terminal, you’ll have a
+            frozen terminal.</p>
+          <p>Don’t worry, you don’t have to close the terminal, not anymore. Just use Ctrl+Q and you can use the
+            terminal again.</p>
+          <pre><code>ctrl+Q</code></pre>
+        </div>
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+        <div>
+          <strong style="color: darkcyan">
+            <h3>9. Move to beginning or end of line</h3>
+          </strong><br>
+          <p>Suppose you are typing a long command and midway you realize that you had to change something at the
+            beginning.
+            You would use several left arrow keystrokes to move to the start of the line. And similarly for going to the
+            end of the line.</p>
+          <p>You can use Home and End keys here of course but alternatively, you can use Ctrl+A to go to the beginning
+            of the line and Ctrl+E to go to the end.</p>
+          <img src="./../images/Linux-Command-tricks-to-save-time-5.png" style="max-width:100%">
+          <p>I find it more convenient than using the home and end keys, especially on my laptop.</p>
+        </div>
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+        <div>
+          <strong style="color: darkcyan">
+            <h3>10. Reading a log file in real time</h3>
+          </strong>
+          <p>In situations where you need to analyze the logs while the application is running, you can use the tail
+            command with -f option.</p>
+          <pre><code>tail -f path_to_Log</code></pre>
+          <p>You can also use the regular grep options to display only those lines that are meaningful to you:</p>
+          <pre><code>tail&nbsp;-f path_to_log | grep search_term</code></pre>
+          <p>You can also use the option F here. This will keep the tail running even if the log file is deleted. So if
+            the log file is created again, tail will continue logging.</p>
+        </div>
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+        <div>
+          <strong style="color: darkcyan">
+            <h3>11. Reading compressed logs without extracting</h3>
+          </strong>
+          <p>Server logs are usually gzip compressed to save disk space. It creates an issue for the developer or
+            sysadmin analyzing the logs.
+            You might have to <a href="http://www.hypexr.org/linux_scp_help.php" target="_blank" rel="noopener nofollow"
+              class="external">scp</a>
+            it to your local and then extract it to access the files because, at times, you don’t have write permission
+            to extract the logs.</p>
+          <p>Thankfully, z commands save you in such situations.
+            z commands provide alternatives of the regular commands that you use to deal with log files such as less,
+            cat, grep etc.</p>
+          <p>So you get zless, zcat, zgrep etc and you don’t even have to explicitly extract the compressed files.
+            Please refer to my earlier article about
+            <a href="https://itsfoss.com/read-compressed-log-files-linux/" target="_blank" rel="noopener">using z
+              commands to real compressed logs</a> in detail.</p>
+          <p>This was one of the secret finds that won me a coffee from my colleague.</p>
+        </div>
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+        <div>
+          <strong style="color: darkcyan">
+            <h3>12. Use less to read files</h3>
+          </strong>
+          <p>To see the contents of a file, cat is not the best option especially if it is a big file. cat command will
+            display the entire file on your screen.</p>
+          <p>You can use Vi, Vim or other terminal based text editors but if you just want to read a file, less command
+            is a far better choice.</p>
+          <pre><code>less path_to_file</code></pre>
+          <p>You can search for terms inside less, move by page, display with line numbers etc.</p>
+        </div>
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+        <div>
+          <strong style="color: darkcyan">
+            <h3>13. Reuse the last item from the previous command with !$</h3>
+          </strong>
+          <p>Using the argument of the previous command comes handy in many situations.</p>
+          <p>Say you have to create a directory and then go into the newly created directory. There you can use the !$
+            options.</p>
+          <img src="./../images/Linux-Command-tricks-to-save-time-6.png" style="max-width:100%">
+          <figcaption id="caption-attachment-17824" class="wp-caption-text">Use !$ to use the argument of last command
+          </figcaption>
+          <p>A better way to do the same is to use alt+. . You can use . a number times to shuffle between the options
+            of the last commands.</p>
+        </div>
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+        <div>
+          <strong style="color: darkcyan">
+            <h3>14. Reuse the previous command in present command with !!</h3>
+          </strong>
+          <p>You can call the entire previous command with !!. This comes particularly useful when you have to run a
+            command and realize that it needs root privileges.</p>
+          <p>A quick sudo !! saves plenty of keystrokes here.</p>
+          <img src="./../images/Linux-Command-tricks-to-save-time-7.png" style="max-width:100%">
+          <figcaption id="caption-attachment-17823" class="wp-caption-text">Use !! to use last command as an argument
+          </figcaption>
+        </div>
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+        <div>
+          <strong style="color: darkcyan">
+            <h3>15. Using alias to fix typos</h3>
+          </strong>
+          <p>You probably already know what is an alias&nbsp;command in Linux. What you can do is, to use them to fix
+            typos.</p>
+          <p>For example, you might often mistype grep as gerp. If you put an alias in your bashrc in this fashion:</p>
+          <pre><code>alias gerp=grep</code></pre>
+          <p>This way you won’t have to retype the command again.</p>
+        </div>
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+        <div>
+          <strong style="color: darkcyan">
+            <h3>16. Copy Paste in Linux terminal</h3>
+          </strong>
+          <p>This one is slightly ambiguous because it depends on Linux distributions and terminal applications. But in
+            general,
+            you should be able to copy paste commands with these shortcuts:</p>
+          <ul>
+            <li>Select the text for copying and right click for paste (works in Putty and other Windows SSH clients)
+            </li>
+            <li>Select the text for copying and middle click (scroll button on the mouse) for paste</li>
+            <li>Ctrl+Shift+C for copy and Ctrl+Shift+V for paste</li>
+          </ul>
+
+
+        </div>
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+        <div>
+          <strong style="color: darkcyan">
+            <h3>17. Using yes command for commands or scripts that need interactive response</h3>
+          </strong>
+          <p>If there are some commands or scripts that need user interaction and you know that you have to enter Y each
+            time it requires an input, you can use Yes command.</p>
+          <p>Just use it in the below fashion:</p>
+          <pre><code>yes | command_or_script</code></pre>
+
+        </div>
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+        <div>
+          <strong style="color: darkcyan">
+            <h3>18. Empty a file without deleting it</h3>
+          </strong>
+          <p>If you just want to empty the contents of a text file without deleting the file itself, you can use a
+            command similar to this:</p>
+          <pre><code>&gt; filename</code></pre>
+
+        </div>
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+        <div>
+          <strong style="color: darkcyan">
+            <h3>19. Find if there are files containing a particular text</h3>
+          </strong>
+          <p>There are multiple ways to search and find in Linux command line.
+            But in the case when you just want to see if there are files that contain a particular text, you can use
+            this command:</p>
+          <pre><code>grep&nbsp;-Pri Search_Term path_to_directory</code></pre>
+          <p>I highly advise mastering find command though.</p>
+        </div>
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+        <div>
+          <strong style="color: darkcyan">
+            <h3>20. Using help with any command</h3>
+          </strong>
+          <p>I’ll conclude this article with one more obvious and yet very important ‘trick’, using help with a command
+            or a&nbsp;command line tool.</p>
+          <p>Almost all command and command line tool come with a help page that shows how to use the command. Often
+            using help will tell you the basic usage of the tool/command.</p>
+          <p>Just use it in this fashion:</p>
+          <pre><code>command_tool --help</code></pre>
+        </div>
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+        <div>
+          <strong style="color: darkcyan">
+            <h3>21. Kill a running command/process</h3>
+          </strong>
+          <p>This one is perhaps way too obvious. If there is a command running in the foreground and you want to exit it, you can press Ctrl+C to stop that running command.</p>
+<br><br>
+          There are more Linux command tricks to save time in the terminal.
+        </div>
+        <br><br>
+        <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+      </div>
+      <!-- /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*//*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/ -->
+
+    </div>
+
+
+    <footer class="container-fluid text-center" style="background-color: #3f3f3f; width: 100%">
+      <div style="text-align: center">
+        <!-- Adding  icons -->
+        <a href="https://www.facebook.com/anandhackie" class="fa fa-facebook icons" target="_blank"></a>
+        <a href="https://www.twitter.com/anand_hackie" class="fa fa-twitter icons" target="_blank"></a>
+        <a href="https://www.youtube.com/c/Anandhackie" class="fa fa-youtube icons" target="_blank"></a>
+        <a href="https://www.instagram.com/insta_hackie/" class="fa fa-instagram icons" target="_blank"></a>
+        <a href="https://soundcloud.com/anandhackie" class="fa fa-soundcloud icons" target="_blank"></a>
+      </div>
+      <br>
+      <p>© Copyright 2019. All Rights Reserved. Developed By <br><a href="https://facebook.com/anandhackie"
+          title="Visit Anand's FB">Anand Kumar</a></p>
+      <a href="#myPage" title="To Top" style="border: 2px solid #818181;">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <br>
+    </footer>
+</body>
+
+</html>

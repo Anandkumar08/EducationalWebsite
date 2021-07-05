@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="9f841e7780177523-3214ceb76f765f38-gc38c6fe6f9d06436-c">
+  </meta>
+
+  <title>HackieTech</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+  <style>
+    .bg {
+      background-color: rgb(245, 245, 245);
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* .context-dark,
+    .bg-gray-dark,
+    .bg-primary {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .footer-classic a,
+    .footer-classic a:focus,
+    .footer-classic a:active {
+      color: #ffffff;
+    } */
+
+    .nav-list li a:hover:before {
+      margin-left: 0;
+      opacity: 1;
+      visibility: visible;
+    }
+
+
+    .nav-list li a:before {
+      content: "\f14f";
+      font: 400 21px/1 "Material Design Icons";
+      color: #4d6de6;
+      display: inline-block;
+      vertical-align: baseline;
+      margin-left: -28px;
+      margin-right: 7px;
+      opacity: 0;
+      visibility: hidden;
+      transition: .22s ease;
+    }
+
+    /* ********************************************************************************************************  */
+
+    /* ************************************************************************************************************************************ */
+    .login-form {
+      width: 400px;
+      margin: 0px auto;
+    }
+
+    .login-form form {
+      margin-bottom: 15px;
+      background: #f7f7f7;
+      box-shadow: 6px 8px 11px 3px rgba(0, 0, 0, 0.3);
+      padding: 30px;
+    }
+
+    .login-form h2 {
+      color: #636363;
+      margin: 0 0 15px;
+      position: relative;
+      text-align: center;
+    }
+
+    .login-form h2:before,
+    .login-form h2:after {
+      content: "";
+      height: 2px;
+      width: 30%;
+      background: #d4d4d4;
+      position: absolute;
+      top: 50%;
+      z-index: 2;
+    }
+
+    .login-form h2:before {
+      left: 0;
+    }
+
+    .login-form h2:after {
+      right: 0;
+    }
+
+
+    .login-form h2 {
+      margin: 0 0 15px;
+    }
+
+    .form-control,
+    .btn {
+      min-height: 38px;
+      border-radius: 2px;
+    }
+
+    .btn {
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .create:hover {
+
+      background-color: #818181;
+    }
+
+    .margT25 {
+      margin-bottom: 25px;
+    }
+  </style>
+  <!--LINK CSS-->
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <!--LINK JQUERY-->
+  <script type="text/javascript" src="./script/script.js"></script>
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" class="bg">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="index.html" title="Home"><span class="glyphicon glyphicon-home" style="font-size: 16px;"></span></a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#Technology" title="Technology">Technology</a></li>
+          <li><a href="#Learnings" title="Books">Learnings</a></li>
+          <li><a href="#contactus" title="Contact US"><span class="glyphicon glyphicon-comment"
+                style="font-size: 16px;"></span></a></li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn"><span class="glyphicon glyphicon-chevron-down"
+                  style="font-size: 16px;"></span></button>
+              <div class="dropdown-content" style="left:0;">
+                <a href="login.html" title="Login">Login</a>
+                <a href="signUp.html" title="SignUp">SignUp</a>
+              </div>
+            </div>
+          </li>
+          <!-- <li><a href="login.html" title="Login">Login</a></li>
+              <li class="active"><a href="signUp.html" title="SignUp">SignUp</a></li> -->
+          <li><a href="#" title="Settings"><span class="glyphicon glyphicon-cog" style="font-size: 16px;"></span></a>
+          </li>
+          <li><a href="Support.html" title="Support">Submit your Templates</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="bgimage">
+    <img class="" src="./images/Banner/slider-bg5.jpg" style="width: 100%;height: 600px;">
+  </div>
+
+  <div class="bannerImg w3-allerta">
+    <!-- <span class="newfont" style="font-size: 30px;">| HackieTech | </span> -->
+    <p class="w3-xxxlarge newfont" style="font-size: 69px;">| HackieTech | </p>
+    <!-- <p>Don't fear the Technology</p> -->
+  </div>
+  <br><br><br>
+  <!-- ----------------------------------------------------------------Container (Profile)-----------<span class="glyphicon glyphicon glyphicon-user"></span>---------------------------------------------------------- -->
+  <div class="login-form">
+    <form>
+      <br>
+      <div class="text-center">
+        <img src="./images/login.png" class="img-circle avatar" alt="Avatar"
+          style="width:90px;margin-top: -44%; box-shadow: 5px 6px 13px lightslategray;">
+      </div>
+
+      <h2>Log in</h2>
+
+      <div class="row">
+        <div class="input-group margT25">
+          <span class="input-group-addon">
+            <i class="glyphicon glyphicon-user"></i>
+          </span>
+          <input id="login-username" type="text" class="form-control" name="username" value=""
+            placeholder="username or email" required="required">
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-group margT25">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+          <input id="login-password" type="password" class="form-control" name="password" placeholder="password"
+            required="required">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <button type="submit" class="btn btn-primary btn-block">Log in</button>
+        </div>
+        <div class="col-sm-6">
+          <button type="reset" class="btn btn-primary btn-block">reset</button>
+        </div>
+      </div>
+      <br>
+      <div class="clearfix">
+        <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
+        <a href="#" class="pull-right">Forgot Password?</a>
+      </div>
+    </form>
+    <div class="form-group">
+      <button type="" onclick="window.location='./signUp.html';" class="btn btn-success btn-lg btn-block create">Create
+        an Account</button>
+    </div>
+  </div>
+  <!-- ---------------------------------------------------------------Container (Sign-Up)------------------------------------------------- -->
+
+
+  <!-- **************************************************************************** -->
+  <br><br>
+  <!-- **************************************************************************** -->
+  <footer class="container-fluid text-center" style="background-color: #3f3f3f; width: 100%">
+    <div style="text-align: center">
+      <!-- Adding  icons -->
+      <a href="https://www.facebook.com/anandhackie" class="fa fa-facebook icons" target="_blank"></a>
+      <a href="https://www.twitter.com/anand_hackie" class="fa fa-twitter icons" target="_blank"></a>
+      <a href="https://www.youtube.com/c/Anandhackie" class="fa fa-youtube icons" target="_blank"></a>
+      <a href="https://www.instagram.com/insta_hackie/" class="fa fa-instagram icons" target="_blank"></a>
+      <a href="https://soundcloud.com/anandhackie" class="fa fa-soundcloud icons" target="_blank"></a>
+    </div>
+    <br>
+    <p>© Copyright 2019. All Rights Reserved. Developed By <br><a href="https://facebook.com/anandhackie"
+        title="Visit Anand's FB">Anand Kumar</a></p>
+    <a href="#myPage" title="To Top" style="border: 2px solid #818181;">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <br>
+  </footer>
+</body>
+
+</html>
